@@ -1,0 +1,41 @@
+/* =========================
+   Sidebar Width
+========================= */
+section[data-testid="stSidebar"] {
+    min-width: 380px;
+    max-width: 380px;
+}
+
+/* =========================
+   Radio Menu Style
+========================= */
+
+/* 라디오 동그라미 제거 */
+div[role="radiogroup"] > label > div:first-child {
+    display: none;
+}
+
+/* 메뉴 항목 */
+div[role="radiogroup"] label {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 줄바꿈 허용 */
+div[role="radiogroup"] label span {
+    white-space: normal;
+    line-height: 1.4;
+}
+
+/* 선택된 메뉴 강조 */
+div[role="radiogroup"] label[data-selected="true"] {
+    background-color: rgba(0, 123, 255, 0.15);
+}
+
+
+/* 메인 콘텐츠 여백 */
+.main > div {
+    padding: 2rem 3rem;
+}
