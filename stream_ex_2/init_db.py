@@ -28,13 +28,13 @@ def load_csv_to_db(csv_path, table_name):
 if __name__ == "__main__":
     print("🚀 DB 초기화 시작")
 
-    load_csv_to_db("data/district.csv", "district")
-    load_csv_to_db("data/population.csv", "population")
-    load_csv_to_db("data/car.csv", "car")
-    load_csv_to_db("data/public_transit.csv", "public_transit")
-    load_csv_to_db("data/parking_car.csv", "parking_car")
-    load_csv_to_db("data/vehicle.csv", "vehicle")
-    load_csv_to_db("data/traffic.csv", "traffic")
+    load_csv_to_db("./data/district.csv", "district")
+    load_csv_to_db("./data/population.csv", "population")
+    load_csv_to_db("./data/car.csv", "car")
+    load_csv_to_db("./data/public_transit.csv", "public_transit")
+    load_csv_to_db("./data/parking_car.csv", "parking_car")
+    load_csv_to_db("./data/vehicle.csv", "vehicle")
+    load_csv_to_db("./data/traffic.csv", "traffic")
 
     # -------------------------
     # 4. View 생성
