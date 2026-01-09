@@ -1,6 +1,10 @@
 # MBCAcademy_PJ1
 
-# db input
-init_db.py 
+# install requirement
+pip install -r requirements.txt
 
-app.py
+# db input
+python init_db.py 
+
+# start streamlit
+streamlit run app.py
