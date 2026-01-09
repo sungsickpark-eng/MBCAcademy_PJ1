@@ -221,15 +221,16 @@ elif menu == "📊 CCTV & 사고":
         st.success(f"예측 사고 심각도: **{pred}**")
 
 elif menu == "🚗 교통량 vs 자동차":
-    st.header("📈 교통량과 자동차 등록 관계 분석")
+    st.header("📈 자동차 등록과 교통량 관계 분석")
     
     df, df_traffic = load_data_traffic()
     total_summary = make_monthly_summary(df)
 
-    tab1, tab2, tab3 = st.tabs([
+    tab1, tab2, tab3, tab4 = st.tabs([
         "📊 차종별 및 전체 자동차 등록 추이",
         "📊 교통량 증감 시각화",
-        "📈 교통량 vs 등록대수 관계 분석"
+        "📈 자동차 등록과 교통량 관계 분석",
+        "📈 test page"
     ])
 
     with tab1:
@@ -266,6 +267,11 @@ elif menu == "🚗 교통량 vs 자동차":
             st.pyplot(fig_trend)
         with col2:
             st.pyplot(fig_scatter)
+            
+    with tab4:
+        st.subheader("📊 test")
+
+        
         
 elif menu == "🚌 대중교통 영향":
     st.header("🚌 대중교통 이용 영향 분석")
